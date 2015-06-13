@@ -1,0 +1,12 @@
+This is an antiarp module of linux kernel. The principle is simple: send your
+arp ack package to the gateway. Because of the mechanism and strategy problem,
+This module should not add to kernel.
+You can compile and load it as follows:
+1. $ make
+2. # insmod antiarp.ko
+
+Note: The count of arp package is set to be 10000, you can increase it manually.
+
+Remove it as follows:
+# rmmod antiarp
+Just for fun.
